@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4532D9F2B8BCE24008FDA42 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4532D9E2B8BCE24008FDA42 /* SessionManager.swift */; };
 		C45C29612B83F77400A1AA76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C29602B83F77400A1AA76 /* AppDelegate.swift */; };
 		C45C29632B83F77400A1AA76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C29622B83F77400A1AA76 /* SceneDelegate.swift */; };
 		C45C29652B83F77400A1AA76 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C29642B83F77400A1AA76 /* TaskListViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4532D9E2B8BCE24008FDA42 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		C45C295D2B83F77400A1AA76 /* TaskListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45C29602B83F77400A1AA76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C45C29622B83F77400A1AA76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4532D992B8BCD8A008FDA42 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C45C29642B83F77400A1AA76 /* TaskListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C4532D9A2B8BCD9E008FDA42 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C45C29602B83F77400A1AA76 /* AppDelegate.swift */,
+				C45C29622B83F77400A1AA76 /* SceneDelegate.swift */,
+				C45C29712B83F77600A1AA76 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C4532D9B2B8BCDBD008FDA42 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				C45C29792B87F62000A1AA76 /* FilledButtonFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		C4532D9C2B8BCDE6008FDA42 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C45C296E2B83F77600A1AA76 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C4532D9D2B8BCE03008FDA42 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C4532D9E2B8BCE24008FDA42 /* SessionManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		C45C29542B83F77400A1AA76 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +102,13 @@
 		C45C295F2B83F77400A1AA76 /* TaskListApp */ = {
 			isa = PBXGroup;
 			children = (
-				C45C29602B83F77400A1AA76 /* AppDelegate.swift */,
-				C45C29622B83F77400A1AA76 /* SceneDelegate.swift */,
-				C45C29642B83F77400A1AA76 /* TaskListViewController.swift */,
-				C45C29792B87F62000A1AA76 /* FilledButtonFactory.swift */,
-				C45C296C2B83F77600A1AA76 /* Assets.xcassets */,
-				C45C296E2B83F77600A1AA76 /* LaunchScreen.storyboard */,
-				C45C29712B83F77600A1AA76 /* Info.plist */,
+				C4532D9D2B8BCE03008FDA42 /* Services */,
+				C4532D9A2B8BCD9E008FDA42 /* App */,
+				C4532D992B8BCD8A008FDA42 /* ViewControllers */,
+				C4532D9B2B8BCDBD008FDA42 /* Factories */,
+				C4532D9C2B8BCDE6008FDA42 /* Storyboards */,
 				C45C29692B83F77400A1AA76 /* TaskListApp.xcdatamodeld */,
+				C45C296C2B83F77600A1AA76 /* Assets.xcassets */,
 			);
 			path = TaskListApp;
 			sourceTree = "<group>";
@@ -142,6 +185,7 @@
 			files = (
 				C45C296B2B83F77400A1AA76 /* TaskListApp.xcdatamodeld in Sources */,
 				C45C297A2B87F62000A1AA76 /* FilledButtonFactory.swift in Sources */,
+				C4532D9F2B8BCE24008FDA42 /* SessionManager.swift in Sources */,
 				C45C29652B83F77400A1AA76 /* TaskListViewController.swift in Sources */,
 				C45C29612B83F77400A1AA76 /* AppDelegate.swift in Sources */,
 				C45C29632B83F77400A1AA76 /* SceneDelegate.swift in Sources */,
@@ -290,7 +334,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6NTBUA69W9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TaskListApp/Info.plist;
+				INFOPLIST_FILE = TaskListApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
@@ -322,7 +366,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6NTBUA69W9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TaskListApp/Info.plist;
+				INFOPLIST_FILE = TaskListApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
